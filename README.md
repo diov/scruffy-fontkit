@@ -4,7 +4,7 @@
 
 A [Nexus](https://raidcore.gg/Nexus) addon for the bitmap fonts of Guild Wars 2. It works in one of two ways:
 
-- **Your own font**: every glyph, CJK and Latin, is replaced with glyphs rendered from a font you choose.
+- **Your own font**: every glyph, CJK and Latin, is replaced with glyphs rendered from a font you choose. Latin and Chinese share one size and baseline, so mixed text follows the proportions of your font; in chat and body text, Latin letters come out smaller than the stock ones.
 - **Sharper stock text**: no font needed. With the game's *DPI Scaling* option on, the game enlarges its small bitmap fonts and the text looks blurry. The builder re-renders the fonts the stock glyphs were drawn from at your Windows display scale, so the text keeps its look but stays sharp: the Latin font it finds in `Gw2.dat`, and for Chinese text, SimHei and SimSun from Windows.
 
 The font pack is generated on your own PC from your own game data. No font pack is distributed.
@@ -86,9 +86,10 @@ If you see `no font pack loaded` or `invalid font pack`, check that `font.pack` 
 - With the game's *DPI Scaling* enabled, text is sharp only if the pack has the variant for the current Windows scale. After changing the Windows scale or moving the game to a monitor with a different scale, generate the pack again (or add that scale with `--dpi-scale`); until then text looks blurry, like the stock fonts. Icons and other UI images are still enlarged by the game.
 - With *DPI Scaling*, a few punctuation symbols that your font does not have stay at their stock size.
 - With *DPI Scaling*, Chinese and Japanese lines may hold one character fewer than without it: glyph widths are rounded to whole pixels at the larger size.
-- Accented Latin letters and some symbols are drawn one size smaller, because the stock fonts leave little room above capitals.
+- Some accented Latin letters and symbols are drawn one size smaller, because the stock fonts leave little room above capitals (fewer with *your own font*).
 - Korean text keeps the stock glyphs.
-- In mixed Chinese and Latin text, Latin capitals are about as tall as Chinese characters and sit a few pixels lower. The stock fonts are drawn this way, and both modes keep the stock sizes and baselines. In the chat window, the bottom of the last line (for example the tail of `g`) can be cut off by the input line, with or without the addon.
+- With *sharper stock text*, Latin capitals stay about as tall as Chinese characters in mixed text, as in the stock fonts. Where the stock Latin sits lower (chat and body text), Latin moves up and Chinese moves down by a few pixels so that both share a baseline. Chinese players who prefer balanced mixed text can use *your own font*.
+- In the chat window, the bottom of the last line can be cut off by the input line, with or without the addon.
 - The launcher window (account login before the game starts) draws with its own fonts and is not changed.
 - With *your own font*, all styles (bold, serif) use the single font you choose. Italic styles are slanted like the stock ones: Latin letters lean, Chinese characters stay upright, as in the game. A few decorative fonts whose source fonts are not in `Gw2.dat` stay upright.
 - With *sharper stock text*:
