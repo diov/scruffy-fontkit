@@ -9,7 +9,7 @@
 1. 装好 [Nexus](https://raidcore.gg/Nexus)，关闭游戏。
 2. 从 [Releases](https://github.com/diov/scruffy-fontkit/releases) 下载 `scruffy-fontkit.dll`，放进 `<游戏目录>\addons\`。
 3. 启动游戏，打开插件的选项（Nexus → Addons → Scruffy FontKit）。
-4. 选择 **The game's own fonts, sharper**（保持原版字体），或者 **My font** 并选一个字体文件（例如 `NotoSansSC-Medium.ttf`），然后点 **Build font pack**。字体包在后台生成，需要几分钟；重启游戏后生效。
+4. 选择 **The game's own fonts, sharper**（保持原版字体），或者 **My font** 并选一个字体文件（例如 `NotoSansSC-Medium.ttf`；字重由所选文件决定，例如 `-Medium`、`-Bold`），然后点 **Build font pack**。字体包在后台生成，需要几分钟，生成完马上生效，不用重启。想自己挑时机，就取消勾选 **Use the new font pack as soon as it is built**，之后在列表里点它旁边的 **Use**。同一局里生成过的字体包都留在这个列表里，可以来回切换，不用重新生成。
 
 更换字体、调整 Windows 显示缩放，或者游戏里出现插件提示时，需要重新生成。
 
