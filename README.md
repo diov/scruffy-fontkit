@@ -7,23 +7,24 @@ A [Nexus](https://raidcore.gg/Nexus) addon for Guild Wars 2 that keeps text shar
 ## Installation
 
 1. Install [Nexus](https://raidcore.gg/Nexus) and close the game.
-2. Download `scruffy-fontkit-vX.Y.Z.zip` from [Releases](https://github.com/diov/scruffy-fontkit/releases).
-3. Put `scruffy-fontkit.dll` in `<Guild Wars 2>\addons\`, and `scruffy-fontkit-builder.exe` in `<Guild Wars 2>\addons\scruffy-fontkit\`.
-4. Run the builder to generate the font pack:
-   - double-click it to keep the stock font, or
-   - drag a font file onto it to use that font (for example `NotoSansSC-Medium.ttf`).
+2. Download `scruffy-fontkit.dll` from [Releases](https://github.com/diov/scruffy-fontkit/releases) and put it in `<Guild Wars 2>\addons\`.
+3. Start the game and open the addon's options (Nexus → Addons → Scruffy FontKit).
+4. Choose **The game's own fonts, sharper**, or **My font** and pick a font file (for example `NotoSansSC-Medium.ttf`), then click **Build font pack**. It builds in the background in a few minutes; restart the game to use it.
 
-Run the builder again after changing the font or the Windows display scale, or when the addon shows a message in game. If the message says the font pack is outdated, download the latest release first.
+Build again after changing the font or the Windows display scale, or when the addon shows a message in game.
+
+Upgrading from 0.2.x: Nexus updates the addon, and your font pack keeps working. You can delete `scruffy-fontkit-builder.exe`.
 
 ## Known issues
 
 - Icons and other UI images stay blurry.
 - With your own font, bold and serif text use that same font.
 - A few accented letters are one size smaller.
+- From a font collection (`.ttc`), only the first font is used.
 
 ## Reporting problems
 
-Open an [issue](https://github.com/diov/scruffy-fontkit/issues) with `addons\Nexus\Nexus.log` and `addons\scruffy-fontkit\font-report.tsv`.
+Open an [issue](https://github.com/diov/scruffy-fontkit/issues) with `addons\Nexus\Nexus.log`, and `generate.log` and `font-report.tsv` from `addons\scruffy-fontkit\`.
 
 For stutter, turn on **Debug** in the addon's options (Nexus → Addons → Scruffy FontKit). It logs frame times to `Nexus.log` and stays on until you turn it off. After it stutters, attach `Nexus.log` before you start the game again, since the game overwrites it.
 

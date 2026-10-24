@@ -1,12 +1,12 @@
 Scruffy FontKit - third-party notices
 =====================================
 
-scruffy-fontkit-builder.exe and scruffy-fontkit.dll include code from the
-projects below. Their license texts are reproduced verbatim.
+scruffy-fontkit.dll includes code from the projects below. Their license texts
+are reproduced verbatim.
 
 
 -------------------------------------------------------------------------------
-1. FreeType 2.14.3 (in scruffy-fontkit-builder.exe)
+1. FreeType 2.14.3
 -------------------------------------------------------------------------------
 
 Portions of this software are copyright © 2026 The FreeType Project
@@ -186,7 +186,7 @@ Legal Terms
 
 
 -------------------------------------------------------------------------------
-2. Nexus API header, Nexus.h (in scruffy-fontkit.dll)
+2. Nexus API header, Nexus.h
 -------------------------------------------------------------------------------
 
 MIT License
@@ -213,7 +213,7 @@ SOFTWARE.
 
 
 -------------------------------------------------------------------------------
-3. Dear ImGui 1.80 (in scruffy-fontkit.dll)
+3. Dear ImGui 1.80
 -------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -240,7 +240,7 @@ SOFTWARE.
 
 
 -------------------------------------------------------------------------------
-4. MinGW-w64 runtime (in scruffy-fontkit-builder.exe and scruffy-fontkit.dll)
+4. MinGW-w64 runtime
 -------------------------------------------------------------------------------
 
 MinGW-w64 runtime licensing

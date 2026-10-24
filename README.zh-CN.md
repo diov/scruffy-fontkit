@@ -7,23 +7,24 @@
 ## 安装
 
 1. 装好 [Nexus](https://raidcore.gg/Nexus)，关闭游戏。
-2. 从 [Releases](https://github.com/diov/scruffy-fontkit/releases) 下载 `scruffy-fontkit-vX.Y.Z.zip`。
-3. `scruffy-fontkit.dll` 放进 `<游戏目录>\addons\`，`scruffy-fontkit-builder.exe` 放进 `<游戏目录>\addons\scruffy-fontkit\`。
-4. 运行 builder 生成字体包：
-   - 双击：保持原版字体；
-   - 把字体文件拖到它上面：换成这个字体（例如 `NotoSansSC-Medium.ttf`）。
+2. 从 [Releases](https://github.com/diov/scruffy-fontkit/releases) 下载 `scruffy-fontkit.dll`，放进 `<游戏目录>\addons\`。
+3. 启动游戏，打开插件的选项（Nexus → Addons → Scruffy FontKit）。
+4. 选择 **The game's own fonts, sharper**（保持原版字体），或者 **My font** 并选一个字体文件（例如 `NotoSansSC-Medium.ttf`），然后点 **Build font pack**。字体包在后台生成，需要几分钟；重启游戏后生效。
 
-更换字体、调整 Windows 显示缩放，或者游戏里出现插件提示时，需要重新运行 builder。如果提示字体包过时，先下载最新版本再运行。
+更换字体、调整 Windows 显示缩放，或者游戏里出现插件提示时，需要重新生成。
+
+从 0.2.x 升级：Nexus 会自动更新插件，现有的字体包可以继续使用。`scruffy-fontkit-builder.exe` 可以删掉了。
 
 ## 已知问题
 
 - 图标等界面图片仍然模糊。
 - 使用指定字体时，粗体、衬线体也会显示为该字体。
 - 少数带重音符号的字母会小一号。
+- 字体集合文件（`.ttc`）只使用其中的第一个字体。
 
 ## 反馈问题
 
-在 [Issues](https://github.com/diov/scruffy-fontkit/issues) 提交，附上 `addons\Nexus\Nexus.log` 和 `addons\scruffy-fontkit\font-report.tsv`。
+在 [Issues](https://github.com/diov/scruffy-fontkit/issues) 提交，附上 `addons\Nexus\Nexus.log`，以及 `addons\scruffy-fontkit\` 里的 `generate.log` 和 `font-report.tsv`。
 
 如果遇到卡顿，请在插件的选项里打开 **Debug**（Nexus → Addons → Scruffy FontKit），它会把帧时间记到 `Nexus.log`，关掉之前一直有效。卡顿出现后，请在下次启动游戏前提交 `Nexus.log`，因为启动游戏时它会被覆盖。
 
