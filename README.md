@@ -2,18 +2,33 @@
 
 [中文说明](README.zh-CN.md)
 
-A [Nexus](https://raidcore.gg/Nexus) addon for Guild Wars 2 that keeps text sharp with the game's DPI Scaling on, or replaces the game font with one you choose.
+A [Nexus](https://raidcore.gg/Nexus) addon for Guild Wars 2 that keeps text sharp with DPI Scaling on, or swaps the game font for one you like.
+
+![Text at 175% DPI Scaling: the original on the left, Scruffy FontKit on the right](images/compare-175.jpg)
+
+## Features
+
+- **Sharp text with DPI Scaling.** Text is drawn for your screen's scale instead of being stretched, and looks as close to the original font as it can.
+- **Your own font.** Pick any font file and the game uses it for its text.
+- Builds in the background from the addon's options, and switches without a restart.
 
 ## Installation
 
 1. Install [Nexus](https://raidcore.gg/Nexus) and close the game.
-2. Download `scruffy-fontkit.dll` from [Releases](https://github.com/diov/scruffy-fontkit/releases) and put it in `<Guild Wars 2>\addons\`.
-3. Start the game and open the addon's options (Nexus → Addons → Scruffy FontKit).
-4. Choose **The game's own fonts, sharper**, or **My font** and pick a font file (for example `NotoSansSC-Medium.ttf`; the file decides the weight, such as `-Medium` or `-Bold`), then click **Build font pack**. It builds in the background in a few minutes and is used as soon as it is built, without a restart. To choose when, untick **Use the new font pack as soon as it is built** and click **Use** next to it later. Packs built in the same session stay in that list, so you can switch between them without building again.
+2. Download `scruffy-fontkit.dll` from [Releases](https://github.com/diov/scruffy-fontkit/releases/latest) and put it in `<Guild Wars 2>\addons\`.
+3. Start the game. Nexus keeps the addon up to date from then on.
 
-Build again after changing the font or the Windows display scale, or when the addon shows a message in game.
+## Usage
 
-Upgrading from 0.2.x: Nexus updates the addon, and your font pack keeps working. You can delete `scruffy-fontkit-builder.exe`.
+1. Open the addon's options: Nexus → Addons → Scruffy FontKit.
+2. Choose **Game font**, or **My font** and pick a font file (the file decides the weight, such as `-Regular` or `-Bold`).
+3. Click **Build font pack**. It takes a few minutes and is used as soon as it is built.
+
+Font packs built in the same session stay in a list, so you can switch between them with **Use**. To choose when a new one is used, untick **Use the new font pack as soon as it is built**.
+
+To compare with the original font, click **Show original font**, and **Use font pack again** to switch back.
+
+Build again after changing the Windows display scale, or when the addon asks you to.
 
 ## Known issues
 
@@ -26,9 +41,9 @@ Upgrading from 0.2.x: Nexus updates the addon, and your font pack keeps working.
 
 Open an [issue](https://github.com/diov/scruffy-fontkit/issues) with `addons\Nexus\Nexus.log`, and `generate.log` and `font-report.tsv` from `addons\scruffy-fontkit\`.
 
-For stutter, turn on **Debug** in the addon's options (Nexus → Addons → Scruffy FontKit). It logs frame times to `Nexus.log` and stays on until you turn it off. After it stutters, attach `Nexus.log` before you start the game again, since the game overwrites it.
+For stutter, turn on **Debug** in the addon's options. It logs frame times to `Nexus.log` until you turn it off. After it stutters, attach `Nexus.log` before you start the game again, since the game overwrites it.
 
-## Notes
+## Disclaimer
 
 Do not share your font pack, because it contains data from the game files. Use this addon at your own risk; see ArenaNet's [third-party program policy](https://help.guildwars2.com/hc/en-us/articles/360013625034).
 
