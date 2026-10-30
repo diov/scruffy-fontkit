@@ -21,7 +21,7 @@ A [Nexus](https://raidcore.gg/Nexus) addon for Guild Wars 2 that keeps text shar
 ## Usage
 
 1. Open the addon's options: Nexus → Addons → Scruffy FontKit.
-2. Choose **Game font**, or **My font** and pick a font file (the file decides the weight, such as `-Regular` or `-Bold`).
+2. Choose **Game font**, or **My font** and pick a font file (the file decides the weight, such as `-Regular` or `-Bold`). Game font only works with the game's DPI Scaling on and a Windows display scale above 100%; at 100% the options page says so instead of offering a build.
 3. Click **Build font pack**. It takes a few minutes and is used as soon as it is built.
 
 Font packs built in the same session stay in a list, so you can switch between them with **Use**. To choose when a new one is used, untick **Use the new font pack as soon as it is built**.

@@ -21,7 +21,7 @@
 ## 使用
 
 1. 打开插件的选项：Nexus → Addons → Scruffy FontKit。
-2. 选择 **Game font**（原版字体），或者 **My font** 并选一个字体文件（字重由所选文件决定，例如 `-Regular`、`-Bold`）。
+2. 选择 **Game font**（原版字体），或者 **My font** 并选一个字体文件（字重由所选文件决定，例如 `-Regular`、`-Bold`）。Game font 只在游戏开了 DPI 缩放、Windows 缩放高于 100% 时有效；100% 下设置页会说明原因，不提供生成按钮。
 3. 点 **Build font pack**。生成需要几分钟，完成后马上生效。
 
 同一局里生成过的字体包都留在列表里，可以点 **Use** 来回切换。想自己挑生效时机，就取消勾选 **Use the new font pack as soon as it is built**。
