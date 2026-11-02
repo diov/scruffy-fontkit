@@ -30,6 +30,8 @@ To compare with the original font, click **Show original font**, and **Use font 
 
 Build again after changing the Windows display scale, or when the addon asks you to.
 
+On the Chinese (CN) client only, the options also have **4 interface sizes (CN client)**; see [the Chinese README](README.zh-CN.md#国服界面大小-4-档).
+
 ## Known issues
 
 - Icons and other UI images stay blurry.
