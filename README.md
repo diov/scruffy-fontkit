@@ -37,6 +37,8 @@ On the Chinese (CN) client only, the options also have **4 interface sizes (CN c
 - Icons and other UI images stay blurry.
 - With your own font, bold and serif text use that same font.
 - A few accented letters are one size smaller.
+- Letter pairs such as `To` and `AV` sit a little further apart than in other programs, because the game has no kerning.
+- After a space or at the start of a line, a few letters sit 1–3 px to the right.
 - From a font collection (`.ttc`), only the first font is used.
 
 ## Reporting problems
